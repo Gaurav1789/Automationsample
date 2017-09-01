@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testngsuitetry">
+  <test name="Test">
+  <parameter name="browser" value="ff"></parameter>
+  <groups>
+		 <run>
+		 	<include name="qa" /> 
+		 	<include name="uat" /> 
+		 </run>
+	 </groups>
+    <classes>
+      <class name="projectScripts.Script_Login"/>
+      <class name="projectScripts.Script_Search"/>
+    </classes>
+    </test>
+    <test name="Test1">
+  <parameter name="browser" value="ch"></parameter>
+  <gropus >
+  <run>
+  <include name="qa">
+  </include>
+  
+  <include name="uat">
+  </include>
+  
+  
+  </run>
+  </gropus>
+    <classes>
+      <class name="projectScripts.Script_Login"/>
+      <class name="projectScripts.Script_Search"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- testngsuitetry -->

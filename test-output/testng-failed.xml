@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [testngsuitetry]">
+  <parameter name="browser" value="ch"/>
+  <test name="Test(failed)">
+    <parameter name="browser" value="ff"/>
+    <groups>
+      <run>
+        <include name="qa"/>
+        <include name="uat"/>
+        <include name="qa"/>
+        <include name="uat"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="projectScripts.Script_Login">
+        <methods>
+          <include name="Login_validLogin"/>
+          <include name="Login_invalidLogin"/>
+          <include name="initSetup"/>
+        </methods>
+      </class> <!-- projectScripts.Script_Login -->
+      <class name="projectScripts.Script_Search">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="launchAPP"/>
+          <include name="launchAPP"/>
+        </methods>
+      </class> <!-- projectScripts.Script_Search -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test name="Test1(failed)">
+    <parameter name="browser" value="ch"/>
+    <groups>
+      <run>
+        <include name="qa"/>
+        <include name="uat"/>
+        <include name="qa"/>
+        <include name="uat"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="projectScripts.Script_Login">
+        <methods>
+          <include name="Login_validLogin"/>
+          <include name="Login_invalidLogin"/>
+          <include name="initSetup"/>
+        </methods>
+      </class> <!-- projectScripts.Script_Login -->
+      <class name="projectScripts.Script_Search">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="launchAPP"/>
+          <include name="launchAPP"/>
+        </methods>
+      </class> <!-- projectScripts.Script_Search -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [testngsuitetry] -->
